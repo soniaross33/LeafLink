@@ -2,13 +2,37 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.phoneScreen{
-    width: 390px;
-    height:844px;
-    border-width: 1px;
-    border-style:solid;
-    margin:auto;
-    position:relative;
+.container{
+    width: 100vw;
+    height: 100vh;
+    border-width: 0.3px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #0D4303;
+}
+
+.leaflink-logo {
+    height: 56px;
+    width: 56px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
 }
 
 .profileImg{
@@ -24,7 +48,10 @@
     height: 95px;
 }
 
-.textDetails{
+.request-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 12px;
     margin-left:0px;
 }
@@ -57,12 +84,18 @@
 }
 
 .nameCardDetails{
-    display:flex;
-    width:364px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* width:364px;
     height:97px;
-    margin:auto;
+    margin:auto; */
 }
 
+.name-card-items {
+    display: flex;
+    direction: column;
+}
 
 
 .beASitter{
@@ -79,8 +112,9 @@
     position:absolute;
     bottom:20px;
     right:20px;
-    background-color:green;
-    border-radius:50px;
+    background-color:#398354;
+    border-color: #1A591E;
+    border-radius:10px;
     border-width:0px;
 
 }
