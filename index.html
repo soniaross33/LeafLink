@@ -1,85 +1,92 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- make layout behave like a phone on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
-        <div class = "container">
-            <div>
-                <div class = "header">
-                    <h1>LeafLink</h1>
-                    <img src = "./images/leaf-link-logo.svg" class = "leaflink-logo">
-                </div>
-                
-                <div class = "name-card-items">
-                    <div class = "nameCardDetails">
-                        <div class = "profile-image">
-                            <img src  = "./images/bronte.jpeg" class = "profileImg"/>
-                        </div>
-                        <div class = "request-details">
-                            <div>
-                                <p class = "date">Mon 11/15 - Fri 11/18</p>
-                                <p class = "name">Emily Bronte</p>
-                                <p class = "plants">Large cactus</p>
-                                <p class = "distance">1.0 miles</p>
-                                <p type = "submit" class = "beASitter" value = "Be A Sitter" name="">Be A Sitter</p> 
-                            </div>
-                        </div>
-                        
-                        <img src = "./images/cactus.jpg" class = "plantImg"/>   
-                    </div>
-                    <div class = "nameCardDetails">
-                        <div class = "profile-image">
-                            <img src  = "./images/bronte.jpeg" class = "profileImg"/>
-                        </div>
-                        <div class = "request-details">
-                            <div>
-                                <p class = "date">Mon 11/15 - Fri 11/18</p>
-                                <p class = "name">Emily Bronte</p>
-                                <p class = "plants">Large cactus</p>
-                                <p class = "distance">1.0 miles</p>
-                                <p type = "submit" class = "beASitter" value = "Be A Sitter" name="">Be A Sitter</p> 
-                            </div>
-                        </div>
-                        
-                        <img src = "./images/cactus.jpg" class = "plantImg"/>   
-                    </div>
-                </div>    
-            
-                <div class="requestASitter">
-                    <div>
-                     <span type="submit" value="Request A Sitter" name="">Request A Sitter</span>
-                    </div>
-                </div>
+  <!-- Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-                <div class = "navigation-bar">
-                    <div class = "nav-item" id="home">
-                        <img src  = "./images/home-icon.svg" class = "nav-icon"/>
-                        <span class="nav-title">Home</span>
-                    </div>
-                    <div class = "nav-item" id="sitting">
-                        <img src  = "./images/sitting-icon.svg" class = "nav-icon"/>
-                        <span class="nav-title">Sitting</span>
-                    </div>
-                    <div class = "nav-item" id="parenting">
-                        <img src  = "./images/parenting-icon.svg" class = "nav-icon"/>
-                        <span class="nav-title">Parenting</span>
-                    </div>
-                    <div class = "nav-item" id="chats">
-                        <img src  = "./images/chats-icon.svg" class = "nav-icon"/>
-                        <span class="nav-title">Chats</span>
-                    </div>
-                    <div class = "nav-item" id="profile">
-                        <img src  = "./images/profile-icon.svg" class = "nav-icon"/>
-                        <span class="nav-title">Profile</span>
-                    </div>
-                </div>
-    
-            </div>
+  <link rel="stylesheet" href="style.css" />
+  <title>LeafLink</title>
+</head>
+<body>
+  <!-- phone-sized app container -->
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <h1>LeafLink</h1>
+      <img
+        src="./images/leaf-link-logo.svg"
+        class="leaflink-logo"
+        alt="LeafLink logo"
+      />
+    </header>
 
+    <!-- main content: list of sitter requests -->
+    <main class="requests">
+      <!-- request 1 -->
+      <article class="nameCardDetails">
+        <div class="profile-image">
+          <img
+            src="./images/bronte.jpeg"
+            class="profileImg"
+            alt="Emily Bronte"
+          />
         </div>
-    </body>
 
+        <div class="request-details">
+          <p class="date">Mon 11/15 - Fri 11/18</p>
+          <p class="name">Emily Bronte</p>
+          <p class="plants">Large cactus</p>
+          <p class="distance">Distance: 1.0 miles</p>
+          <button class="beASitter">Be a sitter</button>
+        </div>
+
+        <img
+          src="./images/cactus.jpg"
+          class="plantImg"
+          alt="Large cactus"
+        />
+      </article>
+    </main>
+
+    <!-- Request a sitter button -->
+    <button class="requestASitter">Request a sitter</button>
+
+    <!-- bottom navigation bar -->
+    <nav class="navigation-bar">
+  <button class="nav-item nav-active">
+    <img src="./images/home-icon.svg" class="nav-icon" alt="Home" />
+    <span class="nav-label">Home</span>
+  </button>
+
+  <button class="nav-item">
+    <img src="./images/sitting-icon.svg" class="nav-icon" alt="Sitting" />
+    <span class="nav-label">Sitting</span>
+  </button>
+
+  <button class="nav-item">
+    <img src="./images/parenting-icon.svg" class="nav-icon" alt="Parenting" />
+    <span class="nav-label">Parenting</span>
+  </button>
+
+  <button class="nav-item">
+    <img src="./images/chats-icon.svg" class="nav-icon" alt="Chats" />
+    <span class="nav-label">Chats</span>
+  </button>
+
+  <button class="nav-item">
+    <img src="./images/profile-icon.svg" class="nav-icon" alt="Profile" />
+    <span class="nav-label">Profile</span>
+  </button>
+</nav>
+  </div>
+</body>
 </html>

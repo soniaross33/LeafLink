@@ -1,166 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-    font-family:'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* reset & global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.container{
-    width: 390px;
-    height: 844px;
-    border-width: 0.3px;
-    border-style: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    /* position: relative; */
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  background: #f2f2f2;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+/* phone shell (mobile screen) */
+.container {
+  position: relative;
+  min-height: 100vh;
+  max-width: 430px;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /* bottom space for nav bar */
+  padding: 16px 16px 70px;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 12px;
 }
 
 h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    color: #0D4303;
+  margin: 0;
+  text-align: center;
+  font-size: 48px;
+  color: #0d4303;
 }
 
 .leaflink-logo {
-    height: 56px;
-    width: 56px;
+  height: 56px;
+  width: 56px;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  
+/* scrollable list containing cards */
+.requests {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 4px;
+  /* so last card isn't hidden behind nav/button */
+  padding-bottom: 100px;
 }
 
-.profileImg{
-    width: 76px;
-    height: 76px;
-    clip-path: circle(50%);
-    object-fit:cover;
-    margin-right:10px;
+/* one name card */
+.nameCardDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: #f7f7f7;
+  border-radius: 16px;
 }
 
-.plantImg{
-    width: 89px;
-    height: 95px;
+.profileImg {
+  width: 76px;
+  height: 76px;
+  clip-path: circle(50%);
+  object-fit: cover;
 }
 
-.request-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-left:0px;
+/* right-side plant image */
+.plantImg {
+  width: 89px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.name{ 
-    font-size:20px;
-    font-weight:600;
-    width:177px;
-    height:23px;
-    margin:0;
+/* text in the card */
+.request-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
 }
 
-.date{
-    font-size:11px;
-    width:183px;
-    height:15px;
-    margin:0;
+/* tighten all lines in the request */
+.request-details p {
+    margin: 0;
+    line-height: 1.1;
 }
 
-.plants{
-    /* width:78px;
-    height:18px; */
-    object-fit: fill;
-    margin:0;
-
+.date {
+  margin: 0;
 }
 
-.distance{
-    height:18px;
-    width:78px;
-    margin:0;
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2px 0;
 }
 
-.nameCardDetails{
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    /* width:364px;
-    height:97px;
-    margin:auto; */
+.plants,
+.distance {
+  margin: 0;
 }
 
-.name-card-items {
-    display: flex;
-    flex-direction: column;
-    height: 537px;
+/* Be a sitter button */
+.beASitter {
+  margin-top: 6px;
+  padding: 4px 16px;
+  border-radius: 999px;
+  background-color: #8FB191;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-
-.beASitter{
-    border-radius:50px;
-    background-color:#8FB191;
-    width:177.25px;
-    height:21px;
-    border-width:0;
-    text-align: center;
-}
-
-.requestASitter{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    width:215px;
-    height:58px;
-    text-align: center;
-    justify-content: center;
-    position: right;
-    /* bottom:20px;
-    right:20px; */
-    background-color:#398354;
-    border-color: #1A591E;
-    border-radius:10px;
-    border-width:0px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.navigation-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: auto;
-    height:63px;
-    padding: 20px 0px;
-}
-
-.nav-item{
-    display: flex;
-    width:fit-content;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-icon{
-    height: 24px;
-    width: 24px;
-}
-
-.nav-title{
-    font-size: 10px;
-    font-weight: 500;
-    color: #000000;
+/* Request a sitter button*/
+.requestASitter {
+  position: absolute;
+  bottom: 80px;      
+  right: 20px;       
+  width: 215px;
+  height: 58px;
+  background-color: rgba(26, 89, 30,0.75);
+  border-color: #398354;
+  border-radius: 10px;
+  border-width: 0;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 
+/* bottom navigation bar */
+.navigation-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 63px;
+  border-top: 1px solid #e0e0e0;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.nav-item {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 2px;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.nav-active {
+  color: #398354;
+  font-weight: 600;
+}
