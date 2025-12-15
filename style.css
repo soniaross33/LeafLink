@@ -114,9 +114,15 @@ h1 {
 }
 
 .requestASitter{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
     width:215px;
     height:58px;
-    /* position:absolute; */
+    text-align: center;
+    justify-content: center;
+    position: right;
     /* bottom:20px;
     right:20px; */
     background-color:#398354;
@@ -128,9 +134,31 @@ h1 {
 }
 
 .navigation-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: auto;
     height:63px;
     padding: 20px 10px;
+    gap: 10px;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon{
+    height: 24px;
+    width: 24px;
+}
+
+.nav-title{
+    font-size: 10px;
+    font-weight: 500;
+    color: #000000;
 }
 
 
