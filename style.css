@@ -58,6 +58,12 @@ h1 {
   padding-top: 4px;
   /* so last card isn't hidden behind nav/button */
   padding-bottom: 100px;
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.requests::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
 }
 
 /* one name card */
