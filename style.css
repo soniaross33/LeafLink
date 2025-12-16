@@ -140,12 +140,12 @@ h1 {
 
 .fade-top {
   top: 0;
-  background: linear-gradient(to bottom, #fff, rgba(255,255,255,0));
+  background: linear-gradient(to bottom, #F8F8F8, rgba(255,255,255,0));
 }
 
 .fade-bottom {
   bottom: 0;
-  background: linear-gradient(to top, #fff, rgba(255,255,255,0));
+  background: linear-gradient(to top, #F8F8F8, rgba(255,255,255,0));
 }
 
 /* shown when needed (JS toggles these) */
