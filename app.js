@@ -4,6 +4,8 @@ import {
   collection,
   getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+import { initScrollFades } from "./scrollFade.js";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyDBofnUPmRYAQH4fOpifTyBXrv2PNaWlMo",
@@ -19,6 +21,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const requestsEl = document.querySelector(".requests");
+const requestsWrap = document.querySelector(".requests-wrap");
 
 function renderCard(data) {
   const article = document.createElement("article");
@@ -50,6 +53,8 @@ async function loadRequests() {
   snapshot.forEach((doc) => {
     requestsEl.appendChild(renderCard(doc.data()));
   });
+  
+  initScrollFades(requestsEl, requestsWrap);
 }
 
 // Run on page load
