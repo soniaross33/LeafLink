@@ -242,6 +242,7 @@ h1 {
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 22px;
   font-weight: 700; /* Bold */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.54);
 }
 
 /* bottom navigation bar */
