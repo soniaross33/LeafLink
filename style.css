@@ -28,6 +28,47 @@ body {
   overflow: hidden; /* prevents scrollbars outside the app */
 }
 
+/* status bar */
+.status-bar {
+  height: 44px;
+  padding: 0 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.status-left .time {
+  letter-spacing: 0.2px;
+}
+
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* battery */
+.battery {
+  width: 22px;
+  height: 12px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  position: relative;
+}
+
+.battery-level {
+  height: 100%;
+  width: 70%; /* battery percentage */
+  background: #000;
+  border-radius: 1px;
+}
+
 /* header */
 .header {
   display: flex;
