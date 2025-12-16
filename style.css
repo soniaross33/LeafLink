@@ -25,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 16px 16px 110px;
   overflow: hidden; /* prevents scrollbars outside the app */
 }
 
@@ -53,11 +52,11 @@ h1 {
 
 /* scrollable list containing cards */
 .requests {
-  flex: 1;
+  width: 364px;
+  height: 537px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-y: auto;
-  padding-top: 4px;
-  /* so last card isn't hidden behind nav/button */
-  padding-bottom: 100px;
   -ms-overflow-style: none;  /* IE & Edge */
   scrollbar-width: none;     /* Firefox */
 }
