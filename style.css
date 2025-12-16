@@ -69,6 +69,19 @@ body {
   border-radius: 1px;
 }
 
+/* app content area (between status bar and home indicator) */
+.app-content {
+  position: relative;
+
+  width: 390px;
+  height: 714px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
 /* header */
 .header {
   display: flex;
@@ -174,12 +187,13 @@ h1 {
 }
 
 /* Request a sitter button*/
-.requestASitter {
-  position: absolute;
-  bottom: 80px;      
-  right: 20px;       
+.requestASitter {      
   width: 215px;
   height: 58px;
+  margin-right:13px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom:10px;
   background-color: rgba(26, 89, 30,0.75);
   border-color: #398354;
   border-radius: 10px;
