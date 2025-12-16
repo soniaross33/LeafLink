@@ -104,10 +104,18 @@ h1 {
   width: 56px;
 }
 
-/* scrollable list containing cards */
-.requests {
+/* wrapper holds the non-scrolling fade overlays */
+.requests-wrap {
+  position: relative;
   width: 364px;
   height: 537px;
+  margin: 0 auto;
+}
+
+/* scrollable list containing cards */
+.requests {
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   overflow-y: auto;
@@ -118,6 +126,12 @@ h1 {
 .requests::-webkit-scrollbar {
   display: none;             /* Chrome, Safari */
 }
+
+/* fade masks for scrollable requests */
+.requests {
+  position: relative;
+}
+
 
 /* one name card */
 .nameCardDetails {
