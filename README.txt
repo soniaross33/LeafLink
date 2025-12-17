@@ -28,17 +28,13 @@ HTML: Defines the structure of the screen's user interface.
 
 CSS: Handles the layout, styling, and animations to mimic an iPhone screen.
 
-JavaScript: Handles the scrolling behavior of the screen and gets the backend data (from Firebase) to populate values of html/css.
+JavaScript: Handles the scrolling behavior of the screen and gets the backend data (from Firebase) to populate the user interface.
 
-Firebase Firestore: Stores and retrieves sitter request data in real time.
+Firebase: Stores and retrieves sitter request data in real time.
 
-Firebase Web SDK: Connects the frontend to the Firestore database.
-
-VS Code Live Server: Used to serve the project locally so ES modules function correctly.
-
+VS Code Live Server: Provides a local web server required for running Firebase-based web applications.
 
 
 (Part 3) - Acknowledgments for any third-party code, libraries, or other resources:
 
-
-# TODO
+Google Fonts for the Poppins font family.
