@@ -37,3 +37,7 @@ VS Code Live Server: Provides a local web server required for running Firebase-b
 (Part 3) - Acknowledgments for any third-party code, libraries, or other resources:
 
 Google Fonts for the Poppins font family.
+
+Images used in this project to populate placeholder data are from Google
+
+SVG icon files from Figma
