@@ -21,7 +21,6 @@ Right-click index.html and select "Open with Live Server".
 The app will open in your browser and automatically load sitter requests data from Firebase. Success!
 
 
-
 (Part 2) - A brief description of the tools used:
 
 HTML: Defines the structure of the screen's user interface.
